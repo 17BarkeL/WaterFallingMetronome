@@ -1,0 +1,54 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    border-radius: 5rem;
+}
+
+button {
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+.BPM input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.BPM button {
+    width: 2rem;
+    height: 2rem;
+}
+
+#start {
+    width: 5rem;
+    height: 2rem;
+}

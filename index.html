@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Water Falling Metronome</title>
+    <meta charset="utf-8" />
+    <title>Metronome</title>
+    <script src="./script.js" defer></script>
+    <link href="./style.css" rel="stylesheet" />
 </head>
 <body>
+    <main>
+        <div class="BPM">
+            <input id="BPM-input" type="text" value="60" />
+            <div class="botton">
+                <button id="BPM-decrease">-</button>
+                <input type="range" min="20" max="240" value="60">
+                <button id="BPM-increase">+</button>
+            </div>
+        </div>
+        <button id="start">Start</button>
+    </main>
 </body>
 </html>
