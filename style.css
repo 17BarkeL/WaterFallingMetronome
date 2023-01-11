@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins';
 }
 
 html {
@@ -21,12 +22,18 @@ body
 main {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: darkgrey;
     flex-direction: column;
     width: 70%;
     height: 60%;
     border-radius: 5rem;
+    border: solid 1rem black;
+    box-shadow: rgba(0, 0, 0, 0.9) 0rem 2rem;
+}
+
+button, input[type="range"] {
+    cursor: pointer;
 }
 
 button {
@@ -34,6 +41,16 @@ button {
     color: whitesmoke;
     border: none;
     outline: none;
+    font-size: 3rem;
+    border-radius: 2rem;
+}
+
+.BPM {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 75%;
 }
 
 .BPM input {
@@ -41,14 +58,37 @@ button {
     border: none;
     outline: none;
     text-align: center;
+    height: 4rem;
+    font-size: 3rem;
+}
+
+#BPM-input {
+    width: 7rem;
 }
 
 .BPM button {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 #start {
-    width: 5rem;
-    height: 2rem;
+    width: 20rem;
+    height: 6rem;
+    transition: background-color ease-in-out 0.2s;
+}
+
+#start:hover {
+    background-color: rgb(116, 116, 116);
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+}
+
+.bottom button {
+    margin: 2rem;
 }
