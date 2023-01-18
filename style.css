@@ -1,4 +1,12 @@
-﻿* {
+﻿:root {
+  --body: rgb(44, 44, 44);
+  --main: rgb(78, 78, 78);
+  --button: rgb(100, 100, 100);
+  --button-hover: rgb(92, 92, 92);
+  --text: rgb(208, 208, 208);
+}
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -17,13 +25,52 @@ body
     width: 100vw;
     height: 100vh;
     position: relative;
+    background-color: var(--body);
+}
+
+.themes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 4rem;
+  background-color: grey;
+  margin: 3rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.themes img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.selected {
+  position: absolute;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  opacity: 0.3;
+  left: 0;
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.selected:hover {
+  transform: translateX(150%);
 }
 
 main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: darkgrey;
+    background-color: var(--main);
     flex-direction: column;
     width: 60%;
     height: 60%;
@@ -37,12 +84,17 @@ button, input[type="range"] {
 }
 
 button {
-    background-color: grey;
+    background-color: var(--button);
     color: whitesmoke;
     border: none;
     outline: none;
     font-size: 3rem;
     border-radius: 2rem;
+    transition: background-color ease-in-out 0.2s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
 }
 
 .BPM {
@@ -64,6 +116,7 @@ button {
 
 #BPM-input {
     width: 7rem;
+    color: var(--text);
 }
 
 .BPM button {
@@ -74,11 +127,7 @@ button {
 #toggle {
     width: 20rem;
     height: 6rem;
-    transition: background-color ease-in-out 0.2s;
-}
-
-#toggle:hover {
-    background-color: rgb(116, 116, 116);
+    color: var(--text);
 }
 
 .bottom {

@@ -1,24 +1,29 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Metronome</title>
     <script src="./script.js" defer></script>
     <link href="./style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="themes">
+      <div class="selected"></div>
+      <img src="./moon.svg" alt="" />
+      <img src="./sun.svg" alt="" />
+    </div>
     <main>
-        <div class="BPM">
-            <input id="BPM-input" type="text" value="60" />
-            <div class="bottom">
-                <button id="BPM-decrease">-</button>
-                <input type="range" min="20" max="240" value="60">
-                <button id="BPM-increase">+</button>
-            </div>
+      <div class="BPM">
+        <input id="BPM-input" type="text" value="60" />
+        <div class="bottom">
+          <button id="BPM-decrease">-</button>
+          <input type="range" min="20" max="240" value="60" />
+          <button id="BPM-increase">+</button>
         </div>
-        <button id="toggle">Start</button>
+      </div>
+      <button id="toggle">Start</button>
     </main>
-</body>
+  </body>
 </html>
