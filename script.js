@@ -84,7 +84,7 @@ toggleButton.addEventListener("click", () => {
 
 function playTick() {
     tickInterval = setInterval(() => {
-        console.log("tick");
+        console.log("ticky");
         tick.play();
         mainElement.style.backgroundColor = "rgb(80, 80, 80)";
         setTimeout(() => {
