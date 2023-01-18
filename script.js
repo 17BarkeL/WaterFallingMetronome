@@ -86,7 +86,7 @@ function playTick() {
     tickInterval = setInterval(() => {
         console.log("tick");
         tick.play();
-        mainElement.style.backgroundColor = "cyan";
+        mainElement.style.backgroundColor = "rgb(80, 80, 80)";
         setTimeout(() => {
             mainElement.removeAttribute("style");
         }, 100);

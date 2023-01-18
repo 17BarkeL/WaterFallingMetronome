@@ -77,9 +77,9 @@ button {
     transition: background-color ease-in-out 0.2s;
 }
 
-    #toggle:hover {
-        background-color: rgb(116, 116, 116);
-    }
+#toggle:hover {
+    background-color: rgb(116, 116, 116);
+}
 
 .bottom {
     display: flex;
