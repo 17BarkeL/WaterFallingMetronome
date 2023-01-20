@@ -62,10 +62,6 @@ body
   transition: transform 0.3s ease-in-out;
 }
 
-.selected:hover {
-  transform: translateX(150%);
-}
-
 main {
     display: flex;
     align-items: center;
